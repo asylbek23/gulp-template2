@@ -6,6 +6,7 @@
 * Launch `gulp` to run watchers, server and compilers
 * Launch `gulp build` to minify files for production
 * Launch `gulp webp` to convert .png files to .webp
+* Launch `node createBlock.js block-name pug` to create block files
 
 ##Directory Layout
 
