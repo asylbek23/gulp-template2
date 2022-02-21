@@ -2,7 +2,7 @@
 
 ##Quick start
 
-* Install dev-dependencies `npm i`
+* Install dev-dependencies `yarn istall`
 * Launch `gulp` to run watchers, server and compilers
 * Launch `gulp build` to minify files for production
 * Launch `gulp webp` to convert .png files to .webp
