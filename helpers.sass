@@ -1,0 +1,72 @@
+// 1. После сборки всех картинок (png) (из макета) запусти таск "Gulp webp" - чтобы конвертировать все файлы .png в .webp и потом удалить всех .png файлов.
+
+// 2. Адаптивное изображение по Ширине и Высоте ----------------------->>>
+
+// Контейнер картинки
+.cards__image
+	margin-bottom: 20px
+	padding-bottom: 60% // Высота картинки
+	overflow: hidden
+	position: relative
+
+// Картинка
+.cards__image img
+	width: 100%
+	height: 100%
+	object-fit: cover // Заполнение по центру
+	position: absolute
+	top: 0
+	left: 0
+
+
+// 3. Адаптивное подключение картинки по ширине ----------------------->>>
+picture
+	source(srcset='img/1300x400.jpg', type='image/jpeg', media='(min-width:1300px)')
+	source(srcset='img/800x400.jpg', type='image/jpeg', media='(min-width:992px)')
+	source(srcset='img/400x600.jpg', type='image/jpeg', media='(min-width:360px)')
+
+// 4. Сниппеты
+&__item // item
+&__items // items
+&__content // cont
+&__menu // menu
+&__btn // btn
+&__logo // logo
+&__number // nmb
+&__numbers // nmbs
+&__info // inf
+&__contact // cnt
+&__contacts // cnts
+&__title // ttl
+&__subtitle // sttl
+&__address // add
+&__addresses // adds
+&__messengers // mess
+&__time // tm
+&__text // text
+&__img // img
+&__header // hed
+&__footer // foo
+&__input // inp
+&__inputs // inps
+&__descr // desc
+&__date // dt
+&__question // qs qs
+&__questions // qss
+&__wrapper // wp
+&__presentation // prst
+&__price // prc
+&__prices // prcs
+&__terms // trm
+
+
+// 5. Для повторяющихся блоков и стилей используй:
+	// 1) Общие классы
+	// 2) Миксины (sass)
+
+// 6. Использование Заготовок для верстки - Быстрее чем создание нового.
+
+// 7. Не Забывай использовать Комментарии при написании кода.
+
+// 8. Создание блока:
+	node createBlock.js
